@@ -16,7 +16,8 @@
         "ARG TYPOS_VERSION=(?<currentValue>[^\\s]+)"
       ],
       "depNameTemplate": "typos-cli",
-      "datasourceTemplate": "crate"
+      "datasourceTemplate": "crate",
+      "versioningTemplate": "cargo"
     }
   ]
 }
