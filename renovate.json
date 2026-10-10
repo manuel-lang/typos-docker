@@ -13,11 +13,9 @@
         "Dockerfile"
       ],
       "matchStrings": [
-        "ARG TYPOS_VERSION=(?<currentValue>[^\\s]+)"
+        "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)\\s+ARG (?<varName>[A-Z_]+)_VERSION=(?<currentValue>.*)"
       ],
-      "depNameTemplate": "typos-cli",
-      "datasourceTemplate": "crate",
-      "versioningTemplate": "cargo"
+      "versioningTemplate": "semver"
     }
   ]
 }
