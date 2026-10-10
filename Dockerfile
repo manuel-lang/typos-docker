@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends build-essential
 RUN cargo install typos-cli --version ${TYPOS_VERSION} --locked
 
 # --- Stage 2: Hardened Distroless Runtime Stage ---
-FROM gcr.io/distroless/cc-debian12:nonroot
+FROM gcr.io/distroless/cc-debian13:nonroot
 
 # Copy only the compiled binary from builder
 COPY --from=builder /usr/local/cargo/bin/typos /usr/local/bin/typos
