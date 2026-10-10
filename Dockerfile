@@ -2,7 +2,7 @@
 FROM rust:1.99-slim-trixie AS builder
 
 # Declare the version of typos-cli to install
-ARG TYPOS_VERSION=1.50.2
+ARG TYPOS_VERSION=1.40.0
 
 WORKDIR /usr/src/app
 
