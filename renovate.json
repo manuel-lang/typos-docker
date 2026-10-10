@@ -3,11 +3,14 @@
   "extends": [
     "config:recommended"
   ],
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 0,
   "customManagers": [
     {
       "customType": "regex",
       "managerFilePatterns": [
-        "/^Dockerfile$/"
+        "**/Dockerfile",
+        "Dockerfile"
       ],
       "matchStrings": [
         "ARG TYPOS_VERSION=(?<currentValue>[^\\s]+)"
