@@ -2,7 +2,7 @@
 FROM rust:1.99-slim-trixie AS builder
 
 # renovate: datasource=crate depName=typos-cli
-ARG TYPOS_VERSION=1.51.1
+ARG TYPOS_VERSION=1.52.0
 
 # Install the typos binary directly
 RUN cargo install typos-cli --version ${TYPOS_VERSION} --locked
