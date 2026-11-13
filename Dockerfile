@@ -1,5 +1,5 @@
 # --- Stage 1: Build Stage ---
-FROM rust:1.99-slim-trixie AS builder
+FROM rust:1.100-slim-trixie AS builder
 
 # renovate: datasource=crate depName=typos-cli
 ARG TYPOS_VERSION=1.52.2
